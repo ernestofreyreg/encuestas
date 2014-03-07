@@ -8,6 +8,8 @@ https://docs.djangoproject.com/en/1.6/howto/deployment/wsgi/
 """
 
 import os
+sys.path.append('/var/lib/django/encuestas')
+
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "encuestas.settings")
 
 from django.core.wsgi import get_wsgi_application
